@@ -1,0 +1,78 @@
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.map-holder{
+  height: 100vh;
+}
+#map{
+  height: 100%;
+}
+.Search {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 13vh;
+  left: 0px;
+  color: rgb(86, 86, 86);
+  font-family: Roboto, Arial, sans-serif;    
+  text-align: center;
+  height: 40px;
+}
+
+.Search-inputs{
+  background-color: #ffffff;
+  display: flex ;
+  flex-direction: column;
+  padding:5px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 1px 3px 0px;    
+}
+.Search-inputs input {
+  margin: 10px 5px;
+  border-radius: 5px;
+  border-top: 1px;
+  border-left: 1px;
+}
+.button {
+  background-color:  #f16b6b !important;
+  color:white !important;
+  }
+.get-search-menu{
+  background-color: white;
+  color: rgb(86, 86, 86);
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 1px 3px 0px; 
+  font-size: 18px;  
+}
+.selected {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+ }
+ 
+.dismiss {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+ }
+ @keyframes slide-in {
+  0% { -webkit-transform: translateX(-100%); }
+  100% { -webkit-transform: translateX(0%); }
+}
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
